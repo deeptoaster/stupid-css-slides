@@ -1,3 +1,5 @@
 .git-ftp-ignore
+.git-ftp-include
 .gitignore
 Makefile
+src/*
