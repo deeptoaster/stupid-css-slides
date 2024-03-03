@@ -1,4 +1,5 @@
-body, .demo {
+body,
+.demo {
   font-family: 'Titillium Web', sans-serif;
 }
 body {
@@ -14,10 +15,13 @@ a {
   position: relative;
   z-index: 9;
 }
-h1, p {
+h1,
+p {
   margin: 0.5em 0;
 }
-h1, .timeline th, .demo-quote::before {
+h1,
+.timeline th,
+.demo-quote::before {
   font-family: Raleway, sans-serif;
 }
 h1 {
@@ -26,14 +30,16 @@ h1 {
   line-height: 1;
   letter-spacing: 0.2em;
 }
-ul, ol {
+ul,
+ol {
   margin: 0;
 }
 li {
   margin: 0.5em 0 0 -0.33em;
   padding: 0 1em;
 }
-code, pre {
+code,
+pre {
   background-color: #a6b8c1;
   color: #617078;
 }
@@ -41,7 +47,8 @@ code {
   padding: 0.2em 0.3em;
   font-size: 0.8em;
 }
-pre, .demo {
+pre,
+.demo {
   margin: 1em 0;
   border: 0.125em solid #859fab;
   padding: 1em;
@@ -52,7 +59,8 @@ pre, .demo {
 pre {
   white-space: pre-line;
 }
-pre:first-child, .demo:first-child {
+pre:first-child,
+.demo:first-child {
   margin-top: 0;
 }
 .presentation {
@@ -70,7 +78,9 @@ pre:first-child, .demo:first-child {
   padding: 1em 3em;
   background-color: #d2d7d9;
   color: #374952;
-  transition: left 600ms, box-shadow 600ms;
+  transition:
+    left 600ms,
+    box-shadow 600ms;
 }
 .slide:nth-child(4n) {
   background-color: #a6b8c1;
@@ -92,7 +102,10 @@ pre:first-child, .demo:first-child {
   color: #617078;
   font-weight: bold;
 }
-.slide > ul, .half > ul, .slide > ol, .half > ol {
+.slide > ul,
+.half > ul,
+.slide > ol,
+.half > ol {
   height: 100%;
   margin: 0;
   border: solid #859fab;
@@ -103,7 +116,8 @@ pre:first-child, .demo:first-child {
   position: absolute;
   top: -100%;
 }
-.slide-previous, .slide-next {
+.slide-previous,
+.slide-next {
   top: 0;
   bottom: 0;
   left: 0;
@@ -123,7 +137,7 @@ pre:first-child, .demo:first-child {
   opacity: 1;
 }
 .slide-previous::before {
-  content: '\27e8'
+  content: '\27e8';
 }
 .slide-next {
   display: none;
@@ -137,10 +151,12 @@ pre:first-child, .demo:first-child {
 .slide:nth-child(4n) h1 {
   color: #467286;
 }
-.slide:nth-child(4n) code, .slide:nth-child(4n) pre {
+.slide:nth-child(4n) code,
+.slide:nth-child(4n) pre {
   background-color: #d2d7d9;
 }
-.slide.slide-cover, .slide.slide-title {
+.slide.slide-cover,
+.slide.slide-title {
   padding: 1em 0;
 }
 .slide.slide-cover {
@@ -148,14 +164,17 @@ pre:first-child, .demo:first-child {
   background-color: transparent;
   animation: fade-in 3s;
 }
-.slide.slide-cover, .slide.slide-cover h1 {
+.slide.slide-cover,
+.slide.slide-cover h1 {
   color: #617078;
 }
 .slide.slide-cover::after {
   display: none;
 }
-.slide.slide-cover h1, .slide.slide-cover p,
-.slide.slide-title h1, .slide.slide-title p {
+.slide.slide-cover h1,
+.slide.slide-cover p,
+.slide.slide-title h1,
+.slide.slide-title p {
   margin: auto;
   text-align: center;
 }
@@ -190,7 +209,8 @@ pre:first-child, .demo:first-child {
   text-align: center;
   font-size: 0.8em;
 }
-.timeline th, .timeline td {
+.timeline th,
+.timeline td {
   position: relative;
 }
 .timeline th {
@@ -218,7 +238,8 @@ pre:first-child, .demo:first-child {
 .timeline td:nth-child(2n) {
   top: 2em;
 }
-.timeline td::before, .timeline td p {
+.timeline td::before,
+.timeline td p {
   background-color: #859fab;
 }
 .timeline td::before {
@@ -264,10 +285,15 @@ pre:first-child, .demo:first-child {
   color: blue;
   font-weight: bold;
 }
-.demo-margin, .demo-border, .demo-padding, .demo-content {
+.demo-margin,
+.demo-border,
+.demo-padding,
+.demo-content {
   position: relative;
 }
-.demo-margin::before, .demo-border::before, .demo-padding::before {
+.demo-margin::before,
+.demo-border::before,
+.demo-padding::before {
   display: block;
   position: absolute;
   padding: 0.5em;
@@ -278,7 +304,7 @@ pre:first-child, .demo:first-child {
 .demo-margin {
   border: 0.15em dashed #d8e60a;
   padding: 1.5em;
-  background-color: rgba(216, 230, 10, 0.2)
+  background-color: rgba(216, 230, 10, 0.2);
 }
 .demo-margin + .demo-margin {
   margin-top: -1.65em;
@@ -328,7 +354,8 @@ pre:first-child, .demo:first-child {
   margin: 0 0 0 2.25em;
   z-index: 9;
 }
-.demo-quote::before, .demo-quote cite {
+.demo-quote::before,
+.demo-quote cite {
   color: #859fab;
 }
 .demo-quote::before {
@@ -348,12 +375,16 @@ pre:first-child, .demo:first-child {
   font-weight: bold;
   text-align: right;
   text-transform: uppercase;
-  transition: height 400ms, opacity 200ms;
+  transition:
+    height 400ms,
+    opacity 200ms;
 }
 .demo-quote:hover cite {
   height: 1em;
   opacity: 1;
-  transition: height 400ms, opacity 200ms 200ms;
+  transition:
+    height 400ms,
+    opacity 200ms 200ms;
 }
 @media (max-aspect-ratio: 1/1) {
   body {
