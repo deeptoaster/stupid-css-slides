@@ -1,5 +1,7 @@
 .git-ftp-ignore
 .git-ftp-include
 .gitignore
+.prettierrc
 Makefile
+README.md
 src/*
